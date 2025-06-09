@@ -29,13 +29,14 @@ const TargetAudience = () => {
   ];
 
   return (
-    <section className="bg-white text-black py-20 relative overflow-hidden">
+    <section className="bg-aggressive-white text-aggressive-black py-20 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute top-0 left-0 w-full h-20 bg-red-600 diagonal-cut"></div>
+      <div className="absolute top-0 left-0 w-full h-20 bg-aggressive-red diagonal-cut"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <h2 className="font-oswald text-4xl md:text-6xl font-bold text-center mb-16">
-          Этот эфир для тебя, если ты<span className="text-red-600">...</span>
+          Этот эфир для тебя, если ты
+          <span className="text-aggressive-red">...</span>
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -48,10 +49,12 @@ const TargetAudience = () => {
               }}
             >
               <div className="text-4xl mb-4">{item.icon}</div>
-              <h3 className="font-oswald text-xl font-bold mb-3 text-red-400">
+              <h3 className="font-oswald text-xl font-bold mb-3 text-aggressive-red">
                 {item.title}
               </h3>
-              <p className="font-open-sans text-gray-300">{item.description}</p>
+              <p className="font-open-sans text-aggressive-white">
+                {item.description}
+              </p>
             </div>
           ))}
         </div>
